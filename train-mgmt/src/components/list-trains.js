@@ -26,10 +26,7 @@ export default class ListTrains extends Component {
 
     getTrains() {
         this.service.getTrains().then(rails => {
-            console.log(rails);
             this.setState({trains:rails});
-            console.log("Component Mount");
-            console.log(this.state.trains);
         });
     }
 
